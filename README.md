@@ -5,7 +5,7 @@
 # 数据探索
 
 补充
-![1](https://raw.githubusercontent.com/liangkaimeng/picture/main/heatmap.png)
+![heatmap](https://raw.githubusercontent.com/liangkaimeng/picture/main/heatmap.png)
 
 # 特征工程
 
