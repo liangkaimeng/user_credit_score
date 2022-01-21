@@ -8,37 +8,37 @@
 
 ### 训练集
 
-|                                 type |    size | missing | unique |        |
-| -----------------------------------: | ------: | ------: | -----: | ------ |
-|                                   Id |   int64 |  150000 |  0.00% | 150000 |
-|                     SeriousDlqin2yrs |   int64 |  150000 |  0.00% | 2      |
-| RevolvingUtilizationOfUnsecuredLines | float64 |  150000 |  0.00% | 125728 |
-|                                  age |   int64 |  150000 |  0.00% | 86     |
-| NumberOfTime30-59DaysPastDueNotWorse |   int64 |  150000 |  0.00% | 16     |
-|                            DebtRatio | float64 |  150000 |  0.00% | 114194 |
-|                        MonthlyIncome | float64 |  150000 | 19.82% | 13594  |
-|      NumberOfOpenCreditLinesAndLoans |   int64 |  150000 |  0.00% | 58     |
-|              NumberOfTimes90DaysLate |   int64 |  150000 |  0.00% | 19     |
-|         NumberRealEstateLoansOrLines |   int64 |  150000 |  0.00% | 28     |
-| NumberOfTime60-89DaysPastDueNotWorse |   int64 |  150000 |  0.00% | 13     |
-|                   NumberOfDependents | float64 |  150000 |  2.62% | 13     |
+|                                      |    type |   size | missing | unique |
+| -----------------------------------: | ------: | -----: | ------: | ------ |
+|                                   Id |   int64 | 150000 |   0.00% | 150000 |
+|                     SeriousDlqin2yrs |   int64 | 150000 |   0.00% | 2      |
+| RevolvingUtilizationOfUnsecuredLines | float64 | 150000 |   0.00% | 125728 |
+|                                  age |   int64 | 150000 |   0.00% | 86     |
+| NumberOfTime30-59DaysPastDueNotWorse |   int64 | 150000 |   0.00% | 16     |
+|                            DebtRatio | float64 | 150000 |   0.00% | 114194 |
+|                        MonthlyIncome | float64 | 150000 |  19.82% | 13594  |
+|      NumberOfOpenCreditLinesAndLoans |   int64 | 150000 |   0.00% | 58     |
+|              NumberOfTimes90DaysLate |   int64 | 150000 |   0.00% | 19     |
+|         NumberRealEstateLoansOrLines |   int64 | 150000 |   0.00% | 28     |
+| NumberOfTime60-89DaysPastDueNotWorse |   int64 | 150000 |   0.00% | 13     |
+|                   NumberOfDependents | float64 | 150000 |   2.62% | 13     |
 
 ### 测试集
 
-|                                 type |    size | missing |  unique |        |
-| -----------------------------------: | ------: | ------: | ------: | ------ |
-|                                   Id |   int64 |  101503 |   0.00% | 101503 |
-|                     SeriousDlqin2yrs | float64 |  101503 | 100.00% | 0      |
-| RevolvingUtilizationOfUnsecuredLines | float64 |  101503 |   0.00% | 85716  |
-|                                  age |   int64 |  101503 |   0.00% | 82     |
-| NumberOfTime30-59DaysPastDueNotWorse |   int64 |  101503 |   0.00% | 16     |
-|                            DebtRatio | float64 |  101503 |   0.00% | 79878  |
-|                        MonthlyIncome | float64 |  101503 |  19.81% | 11976  |
-|      NumberOfOpenCreditLinesAndLoans |   int64 |  101503 |   0.00% | 56     |
-|              NumberOfTimes90DaysLate |   int64 |  101503 |   0.00% | 18     |
-|         NumberRealEstateLoansOrLines |   int64 |  101503 |   0.00% | 24     |
-| NumberOfTime60-89DaysPastDueNotWorse |   int64 |  101503 |   0.00% | 12     |
-|                   NumberOfDependents | float64 |  101503 |   2.59% | 13     |
+|                                      |    type |   size | missing | unique |
+| -----------------------------------: | ------: | -----: | ------: | ------ |
+|                                   Id |   int64 | 101503 |   0.00% | 101503 |
+|                     SeriousDlqin2yrs | float64 | 101503 | 100.00% | 0      |
+| RevolvingUtilizationOfUnsecuredLines | float64 | 101503 |   0.00% | 85716  |
+|                                  age |   int64 | 101503 |   0.00% | 82     |
+| NumberOfTime30-59DaysPastDueNotWorse |   int64 | 101503 |   0.00% | 16     |
+|                            DebtRatio | float64 | 101503 |   0.00% | 79878  |
+|                        MonthlyIncome | float64 | 101503 |  19.81% | 11976  |
+|      NumberOfOpenCreditLinesAndLoans |   int64 | 101503 |   0.00% | 56     |
+|              NumberOfTimes90DaysLate |   int64 | 101503 |   0.00% | 18     |
+|         NumberRealEstateLoansOrLines |   int64 | 101503 |   0.00% | 24     |
+| NumberOfTime60-89DaysPastDueNotWorse |   int64 | 101503 |   0.00% | 12     |
+|                   NumberOfDependents | float64 | 101503 |   2.59% | 13     |
 
 ## 描述性统计
 
@@ -80,7 +80,15 @@
 
 ![heatmap1](https://raw.githubusercontent.com/liangkaimeng/picture/main/heatmap1.png)
 
-　　*NumberOfTime30-59DaysPastDueNotWorse*与*NumberOfTimes90DaysLate*存在高度相关，*NumberOfTime30-59DaysPastDueNotWorse*与*NumberOfTime60-89DaysPastDueNotWorse*存在高度相关，
+　　*NumberOfTime30-59DaysPastDueNotWorse*与*NumberOfTimes90DaysLate*存在高度相关，*NumberOfTime30-59DaysPastDueNotWorse*与*NumberOfTime60-89DaysPastDueNotWorse*存在高度相关。
+
+## 数据分布
+
+
+
+
+
+
 
 # 特征工程
 
