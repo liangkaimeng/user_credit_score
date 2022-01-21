@@ -1,6 +1,22 @@
 # 数据来源
 
-　　数据来源于kaggle，链接：https://www.kaggle.com/c/GiveMeSomeCredit
+　　数据来源于kaggle，链接：https://www.kaggle.com/c/GiveMeSomeCredit，字段解释如下：
+
+| 标号 |                             字段标签 | 字段解释                  |
+| :--: | -----------------------------------: | ------------------------- |
+|  x1  |                     SeriousDlqin2yrs | 好坏客户                  |
+|  x2  | RevolvingUtilizationOfUnsecuredLines | 无担保放款的循环利用      |
+|  x3  |                                  age | 借款人借款时的年龄        |
+|  x4  | NumberOfTime30-59DaysPastDueNotWorse | 30-59天逾期但不糟糕的次数 |
+|  x5  |                            DebtRatio | 负债比率                  |
+|  x6  |                        MonthlyIncome | 月收入                    |
+|  x7  |      NumberOfOpenCreditLinesAndLoans | 开放式信贷和贷款数量      |
+|  x8  |              NumberOfTimes90DaysLate | 90天逾期次数              |
+|  x9  |         NumberRealEstateLoansOrLines | 不动产贷款或额度数量      |
+| x10  | NumberOfTime60-89DaysPastDueNotWorse | 60-89天逾期但不糟糕次数   |
+| x11  |                   NumberOfDependents | 家属数量                  |
+
+
 
 # 数据探索
 
@@ -81,6 +97,10 @@
 ![heatmap1](https://raw.githubusercontent.com/liangkaimeng/picture/main/heatmap1.png)
 
 　　*NumberOfTime30-59DaysPastDueNotWorse*与*NumberOfTimes90DaysLate*存在高度相关，*NumberOfTime30-59DaysPastDueNotWorse*与*NumberOfTime60-89DaysPastDueNotWorse*存在高度相关。
+
+## 变量信息量
+
+
 
 ## 数据分布
 
