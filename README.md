@@ -76,17 +76,11 @@
 | NumberOfTime60-89DaysPastDueNotWorse | 101503.0 |     0.270317 |     4.503578 |  0.0 |     0.000000 |     0.000000 |     0.000000 |      98.0 |
 |                   NumberOfDependents |  98877.0 |     0.769046 |     1.136778 |  0.0 |     0.000000 |     0.000000 |     1.000000 |      43.0 |
 
-
-
-
-
-
-
 ## 变量相关性
 
-![heatmap](https://raw.githubusercontent.com/liangkaimeng/picture/main/heatmap.png)
+![heatmap1](https://raw.githubusercontent.com/liangkaimeng/picture/main/heatmap1.png)
 
-
+　　*NumberOfTime30-59DaysPastDueNotWorse*与*NumberOfTimes90DaysLate*存在高度相关，*NumberOfTime30-59DaysPastDueNotWorse*与*NumberOfTime60-89DaysPastDueNotWorse*存在高度相关，
 
 # 特征工程
 
