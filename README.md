@@ -4,6 +4,8 @@
 
 　　数据来源于kaggle，链接：https://www.kaggle.com/c/GiveMeSomeCredit，字段解释如下：
 
+<center>表1 字段解释表</center>
+
 | 标号 |                             字段标签 | 字段解释                  |
 | :--: | -----------------------------------: | ------------------------- |
 |  y   |                     SeriousDlqin2yrs | 好坏客户                  |
@@ -26,6 +28,8 @@
 
 #### 训练集
 
+<center>表2 训练集特征情况表</center>
+
 | 字段 | 字段类型 | 数据量 | 缺失率 | 唯一值 |
 | ---: | -------: | -----: | -----: | -----: |
 |   Id |    int64 | 150000 |  0.00% | 150000 |
@@ -44,6 +48,8 @@
 
 
 #### 测试集
+
+<center>表3 测试集特征情况表</center>
 
 | 字段 | 字段类型 | 数据量 |  缺失率 | 唯一值 |
 | ---: | -------: | -----: | ------: | -----: |
@@ -66,6 +72,8 @@
 
 #### 训练集
 
+<center>表4 训练集描述性统计</center>
+
 | 字段 |   计数 |   平均值 |   标准差 | 最小值 |      25% |      50% |       75% |     最大值 |
 | ---: | -----: | -------: | -------: | -----: | -------: | -------: | --------: | ---------: |
 |   id | 150000 | 75000.50 | 43301.41 |   1.00 | 37500.75 | 75000.50 | 112500.25 |  150000.00 |
@@ -82,6 +90,8 @@
 |  x10 | 146076 |     0.76 |     1.12 |   0.00 |     0.00 |     0.00 |      1.00 |      20.00 |
 
 #### 测试集
+
+<center>表5 测试集描述性统计</center>
 
 | 字段 |   计数 |   平均值 |   标准差 | 最小值 |      25% |      50% |      75% |     最大值 |
 | ---: | -----: | -------: | -------: | -----: | -------: | -------: | -------: | ---------: |
@@ -106,6 +116,8 @@
 
 ![heatmap](D:\liangkaimeng\picture\user_credit_score\heatmap.png)
 
+<center>图1 特征热力图</center>
+
 　　*NumberOfTime30-59DaysPastDueNotWorse*与*NumberOfTimes90DaysLate*存在高度相关，*NumberOfTime30-59DaysPastDueNotWorse*与*NumberOfTime60-89DaysPastDueNotWorse*存在高度相关。
 
 
@@ -115,6 +127,8 @@
 　　IV、基尼系数和信息熵，都是二分类算法中用于判断变量对目标的区分能力，IV多应用于逻辑回归算法的特征筛选，基尼系数和信息熵在树模型的运用比较普遍。IV值取值范围： IV < 0.02，无用特征；0.02 < IV < 0.1，弱价值特征；0.1 < IV < 0.3，中价值特征；0.3 < IV < 0.5，强价值特征，IV > 0.5，价值过高。
 
 　　注：IV值仅有参考价值，不可以因为值过高而将其剔除，例如，猜一个人是否已经结婚，他/她的年龄的属于高IV值，能因为它高于0.5，就将该特征进行剔除？显然不可以。
+
+<center>表6 特征信息量</center>
 
 |                                field |       iv |     gini |  entropy |   unique |
 | -----------------------------------: | -------: | -------: | -------: | -------: |
@@ -133,11 +147,32 @@
 
 ### 数据分布
 
+　　从特征分布来看，整体分布一致，仅存在个别特征分布出现偏差，可以通过特征转换或剔除特征进行处理。
+
+![credit_score_kaggle_distplot](D:\liangkaimeng\picture\user_credit_score\credit_score_kaggle_distplot.png)
+
+<center>图2 特征分布图</center>
 
 
 
+<center>表8 特征分布一致性PSI检验</center>
+
+|                                 特征 |  PSI值   |
+| -----------------------------------: | :------: |
+| RevolvingUtilizationOfUnsecuredLines | 0.009166 |
+|                                  age | 0.001202 |
+| NumberOfTime30-59DaysPastDueNotWorse | 0.000247 |
+|                            DebtRatio | 0.085398 |
+|                        MonthlyIncome | 0.130640 |
+|      NumberOfOpenCreditLinesAndLoans | 0.000614 |
+|              NumberOfTimes90DaysLate | 0.000216 |
+|         NumberRealEstateLoansOrLines | 0.000274 |
+| NumberOfTime60-89DaysPastDueNotWorse | 0.000167 |
+|                   NumberOfDependents | 0.000211 |
 
 
+
+# 逻辑回归算法
 
 ## 特征工程
 
@@ -177,7 +212,6 @@
 
 <div style="page-break-after:always;"></div>
 
-# 客户价值模型
 
 
 
@@ -191,7 +225,8 @@
 
 
 
-# 层次分析法
+
+
 
 
 
