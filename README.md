@@ -114,7 +114,7 @@
 
 　　变量相关性可以用于消除特征冗余，同时可以过滤与目标值无关的变量。假设变量A与变量B完全正相关，意味着两个特征包含高度相似的信息，信息中几乎完全没有差异。
 
-![heatmap](D:\liangkaimeng\picture\user_credit_score\heatmap.png)
+![heatmap](https://raw.githubusercontent.com/liangkaimeng/picture/main/heatmap.png)
 
 <center>图1 特征热力图</center>
 
@@ -149,7 +149,7 @@
 
 　　从特征分布来看，整体分布一致，仅存在个别特征分布出现偏差，可以通过特征转换或剔除特征进行处理。
 
-![credit_score_kaggle_distplot](D:\liangkaimeng\picture\user_credit_score\credit_score_kaggle_distplot.png)
+![credit_score_kaggle_distplot](https://raw.githubusercontent.com/liangkaimeng/picture/main/credit_score_kaggle_distplot.png)
 
 <center>图2 特征分布图</center>
 
